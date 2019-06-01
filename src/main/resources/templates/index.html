@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="format.css">
+    <title>URL shortener</title>
+</head>
+<body>
+<div>
+
+    <h4 th:if="${hasMessage}" th:text="${message}"></h4>
+
+    <form action="#" th:action="@{/save-link}" th:object="${urlItem}" method="post">
+        <label for="title">URL</label>
+        <input type="text" name="title" id="title" th:field="*{url}" required>
+
+        <label for="author">Alias</label>
+        <input type="text" name="author" id="author" th:field="*{alias}" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
