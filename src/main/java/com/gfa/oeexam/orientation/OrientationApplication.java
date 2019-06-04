@@ -1,13 +1,13 @@
-package com.gfa.orientationexampleexam.demo;
+package com.gfa.oeexam.orientation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class OrientationApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(OrientationApplication.class, args);
     }
 
 }
